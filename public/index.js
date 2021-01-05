@@ -21,8 +21,11 @@ const newYearsEve = function() {
 
 }
 
-const answer = document.createElement('h1');
-answer.textContent = newYearsEve();
-document.body.append(answer.textContent);
+const day = newYearsEve();
+
+
+// const answer = document.createElement('h1');
+// answer.textContent = newYearsEve();
+// document.body.append(answer.textContent);
 
 // document.body.appendChild(answer);
