@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>To Do List | by Bladimir Doumerc</title>
 </head>
 
@@ -11,6 +12,20 @@
     <h1>
         <%=ejsDay%>
     </h1>
+    <ul>
+        <li>Food</li>
+        <li>Water</li>
+        <li>Listening to music</li>
+        <% for (let newItem of ejsNewItems) { %>
+            <li>
+                <%= newItem %>
+            </li>
+            <%}%>
+    </ul>
+    <form action="/" method="POST">
+        <input type="text" name="newItem">
+        <input type="submit" value="Add">
+    </form>
 </body>
 
 </html>

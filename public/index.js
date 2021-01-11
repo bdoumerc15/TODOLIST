@@ -10,5 +10,4 @@ const localDate = function() {
     return date.toLocaleDateString(local, options);
 }
 
-
 export const day = localDate();
